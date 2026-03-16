@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/CMakeFiles/bootloader
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/CMakeFiles/bootloader.rule
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/CMakeFiles/bootloader-complete.rule
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
