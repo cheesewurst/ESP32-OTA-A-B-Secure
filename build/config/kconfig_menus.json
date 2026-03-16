@@ -13708,6 +13708,64 @@
                 "children": [
                     {
                         "children": [],
+                        "depends_on": "SECURE_FLASH_ENC_ENABLED || SOC_HMAC_SUPPORTED",
+                        "help": "This option enables encryption for NVS. When enabled, XTS-AES is used to encrypt\nthe complete NVS data, except the page headers. It requires XTS encryption keys\nto be stored in an encrypted partition (enabling flash encryption is mandatory here)\nor to be derived from an HMAC key burnt in eFuse.",
+                        "id": "NVS_ENCRYPTION",
+                        "name": "NVS_ENCRYPTION",
+                        "range": null,
+                        "title": "Enable NVS encryption",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "SECURE_FLASH_ENC_ENABLED",
+                        "help": "Enabling this will ignore \"encrypted\" flag for NVS partitions. NVS encryption\nscheme is different than hardware flash encryption and hence it is not recommended\nto have \"encrypted\" flag for NVS partitions. This was not being checked in pre v4.3\nIDF. Hence, if you have any devices where this flag is kept enabled in partition\ntable then enabling this config will allow to have same behavior as pre v4.3 IDF.",
+                        "id": "NVS_COMPATIBLE_PRE_V4_3_ENCRYPTION_FLAG",
+                        "name": "NVS_COMPATIBLE_PRE_V4_3_ENCRYPTION_FLAG",
+                        "range": null,
+                        "title": "NVS partition encrypted flag compatible with ESP-IDF before v4.3",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "This option switches error checking type between assertions (y) or return codes (n).",
+                        "id": "NVS_ASSERT_ERROR_CHECK",
+                        "name": "NVS_ASSERT_ERROR_CHECK",
+                        "range": null,
+                        "title": "Use assertions for error checking",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enabling this option will switch the nvs_set() family of functions to the legacy mode:\nwhen called repeatedly with the same key but different data type, the existing value\nin the NVS remains active and the new value is just stored, actually not accessible through\ncorresponding nvs_get() call for the key given. Use this option only when your application\nrelies on such NVS API behaviour.",
+                        "id": "NVS_LEGACY_DUP_KEYS_COMPATIBILITY",
+                        "name": "NVS_LEGACY_DUP_KEYS_COMPATIBILITY",
+                        "range": null,
+                        "title": "Enable legacy nvs_set function behavior when same key is reused with different data types",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "SPIRAM && (SPIRAM_USE_CAPS_ALLOC || SPIRAM_USE_MALLOC)",
+                        "help": "Enabling this option lets NVS library try to allocate page cache and key hash list in SPIRAM\ninstead of internal RAM. It can help applications using large nvs partitions or large number\nof keys to save heap space in internal RAM. SPIRAM heap allocation negatively impacts speed\nof NVS operations as the CPU accesses NVS cache via SPI instead of direct access to the internal RAM.",
+                        "id": "NVS_ALLOCATE_CACHE_IN_SPIRAM",
+                        "name": "NVS_ALLOCATE_CACHE_IN_SPIRAM",
+                        "range": null,
+                        "title": "Prefers allocation of in-memory cache structures in SPI connected PSRAM",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "id": "component-config-nvs",
+                "title": "NVS",
+                "type": "menu"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
                         "depends_on": null,
                         "help": "Priority used to create new tasks with default pthread parameters.",
                         "id": "PTHREAD_TASK_PRIO_DEFAULT",

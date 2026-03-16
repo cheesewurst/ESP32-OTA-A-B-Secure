@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "ESP32-OTA-A-B-Secure",
-    "project_version":    "e24bf280-dirty",
+    "project_version":    "4b9d51ae-dirty",
     "project_path":       "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure",
     "idf_path":           "/Users/simonschreurs/esp/v5.5.3/esp-idf",
     "build_dir":          "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build",
@@ -21,12 +21,12 @@
     "monitor_toolprefix": "riscv32-esp-elf-",
     "c_compiler":         "/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/efuse/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_common/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_gpio/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_hw_support/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_mm/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_partition/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_pm/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_rom/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_security/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_system/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_timer/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/freertos/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/hal/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/heap/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/log/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/mbedtls/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/pthread/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/soc/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS" : "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/efuse/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_common/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_gpio/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_hw_support/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_mm/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_partition/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_pm/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_rom/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_security/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_system/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_timer/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/freertos/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/hal/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/heap/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/log/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/mbedtls/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/pthread/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/soc/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/spi_flash/Kconfig",
         "COMPONENT_KCONFIGS_PROJBUILD" : "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/bootloader/Kconfig.projbuild;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_app_format/Kconfig.projbuild;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_rom/Kconfig.projbuild;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esptool_py/Kconfig.projbuild;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/partition_table/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "riscv" ],
-    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "efuse", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_driver_gpio", "esp_hw_support", "esp_mm", "esp_partition", "esp_pm", "esp_rom", "esp_security", "esp_system", "esp_timer", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "newlib", "partition_table", "pthread", "riscv", "soc", "spi_flash", "" ],
-    "build_component_paths" : [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/app_update", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/bootloader", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/bootloader_support", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/cxx", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/efuse", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_app_format", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_bootloader_format", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_common", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_gpio", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_hw_support", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_mm", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_partition", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_pm", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_rom", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_security", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_system", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_timer", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esptool_py", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/freertos", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/hal", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/heap", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/log", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/main", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/mbedtls", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/partition_table", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/pthread", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/riscv", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/soc", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/spi_flash", "" ],
+    "build_components" : [ "app_update", "boot_counter", "bootloader", "bootloader_support", "cxx", "efuse", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_driver_gpio", "esp_hw_support", "esp_mm", "esp_partition", "esp_pm", "esp_rom", "esp_security", "esp_system", "esp_timer", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "newlib", "nvs_flash", "partition_table", "pthread", "riscv", "soc", "spi_flash", "" ],
+    "build_component_paths" : [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/app_update", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/boot_counter", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/bootloader", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/bootloader_support", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/cxx", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/efuse", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_app_format", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_bootloader_format", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_common", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_gpio", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_hw_support", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_mm", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_partition", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_pm", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_rom", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_security", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_system", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_timer", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esptool_py", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/freertos", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/hal", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/heap", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/log", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/main", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/mbedtls", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/partition_table", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/pthread", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/riscv", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/soc", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/spi_flash", "" ],
     "build_component_info" : {
         "app_update": {
             "alias": "idf::app_update",
@@ -42,6 +42,21 @@
             "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/app_update/libapp_update.a",
             "sources": [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/app_update/esp_ota_ops.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/app_update/esp_ota_app_desc.c" ],
             "include_dirs": [ "include" ]
+        },
+        "boot_counter": {
+            "alias": "idf::boot_counter",
+            "target": "___idf_boot_counter",
+            "prefix": "idf",
+            "dir": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/boot_counter",
+            "type": "LIBRARY",
+            "lib": "__idf_boot_counter",
+            "reqs": [ "nvs_flash" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/boot_counter/libboot_counter.a",
+            "sources": [ "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/boot_counter/boot_counter.c" ],
+            "include_dirs": [ "." ]
         },
         "bootloader": {
             "alias": "idf::bootloader",
@@ -366,7 +381,7 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "spi_flash" ],
+            "priv_reqs": [ "spi_flash", "boot_counter" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/main/libmain.a",
@@ -402,6 +417,21 @@
             "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/newlib/libnewlib.a",
             "sources": [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/init.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/abort.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/assert.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/heap.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/locks.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/poll.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/pthread.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/random.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/getentropy.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/termios.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/stdatomic.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/time.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/sysconf.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/realpath.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/scandir.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/syscalls.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/reent_syscalls.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/port/esp_time_impl.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/flockfile.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/reent_init.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/newlib_init.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/src/port/esp_time_impl.c" ],
             "include_dirs": [ "platform_include" ]
+        },
+        "nvs_flash": {
+            "alias": "idf::nvs_flash",
+            "target": "___idf_nvs_flash",
+            "prefix": "idf",
+            "dir": "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash",
+            "type": "LIBRARY",
+            "lib": "__idf_nvs_flash",
+            "reqs": [ "esp_partition" ],
+            "priv_reqs": [ "spi_flash", "newlib" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/nvs_flash/libnvs_flash.a",
+            "sources": [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_api.cpp", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_cxx_api.cpp", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_item_hash_list.cpp", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_page.cpp", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_pagemanager.cpp", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_storage.cpp", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_handle_simple.cpp", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_handle_locked.cpp", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_partition.cpp", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_partition_lookup.cpp", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_partition_manager.cpp", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_types.cpp", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_platform.cpp", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_bootloader.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_encrypted_partition.cpp", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_bootloader_aes.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/src/nvs_bootloader_xts_aes.c" ],
+            "include_dirs": [ "include" ]
         },
         "partition_table": {
             "alias": "idf::partition_table",
@@ -1795,10 +1825,34 @@
             "dir": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "spi_flash" ],
+            "priv_reqs": [ "spi_flash", "boot_counter" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": []
+        },
+        "boot_counter": {
+            "alias": "idf::boot_counter",
+            "target": "___idf_boot_counter",
+            "prefix": "idf",
+            "dir": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/boot_counter",
+            "lib": "__idf_boot_counter",
+            "reqs": [ "nvs_flash" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "." ]
+        },
+        "ota_manager": {
+            "alias": "idf::ota_manager",
+            "target": "___idf_ota_manager",
+            "prefix": "idf",
+            "dir": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/ota_manager",
+            "lib": "__idf_ota_manager",
+            "reqs": [ "esp_https_ota", "app_update", "nvs_flash" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "." ]
         }
     },
     "debug_prefix_map_gdbinit": "",

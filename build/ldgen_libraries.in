@@ -30,12 +30,13 @@ $<TARGET_FILE:__idf_esp_app_format>
 $<TARGET_FILE:__idf_esp_bootloader_format>
 $<TARGET_FILE:idf::esp_mm>
 $<TARGET_FILE:__idf_esp_mm>
+$<TARGET_FILE:__idf_nvs_flash>
+$<TARGET_FILE:idf::mbedtls>
 $<TARGET_FILE:__idf_esp_security>
 $<TARGET_FILE:__idf_pthread>
 $<TARGET_FILE:idf::esp_driver_gpio>
 $<TARGET_FILE:idf::esp_timer>
 $<TARGET_FILE:idf::esp_pm>
-$<TARGET_FILE:idf::mbedtls>
 $<TARGET_FILE:idf::esp_app_format>
 $<TARGET_FILE:idf::esp_bootloader_format>
 $<TARGET_FILE:idf::app_update>
@@ -55,4 +56,7 @@ $<TARGET_FILE:idf::freertos>
 $<TARGET_FILE:idf::newlib>
 $<TARGET_FILE:idf::pthread>
 $<TARGET_FILE:idf::cxx>
+$<TARGET_FILE:idf::nvs_flash>
+$<TARGET_FILE:idf::boot_counter>
 $<TARGET_FILE:idf::main>
+$<TARGET_FILE:__idf_boot_counter>
