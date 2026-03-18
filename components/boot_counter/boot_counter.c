@@ -1,5 +1,9 @@
 #include "boot_counter.h"
 #include "nvs_flash.h"
+#include "esp_check.h"
+#include "esp_log.h"
+
+const char* TAG = "BOOT_COUNTER";
 
 void boot_counter_init(void)
 {
@@ -15,6 +19,7 @@ void boot_counter_increment(void)
     nvs_handle_t nvs_handle;
     uint32_t boot_count = 0;
 
+    
     esp_err_t err = nvs_open("storage", NVS_READWRITE, &nvs_handle);
     if (err != ESP_OK) return;
 
@@ -47,7 +52,11 @@ void boot_counter_reset(void)
     esp_err_t err = nvs_open("storage", NVS_READWRITE, &nvs_handle);
     if (err != ESP_OK) return;
 
-    nvs_set_u32(nvs_handle, "boot_count", boot_count);
+    err = nvs_set_u32(nvs_handle, "boot_count", boot_count);
+    if (err != ESP_OK) {
+        nvs_close(nvs_handle);
+        return;
+    }
     nvs_commit(nvs_handle);
     nvs_close(nvs_handle);
 }

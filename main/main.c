@@ -25,9 +25,6 @@ void app_main(void)
 
     print_boot_counter();
     boot_counter_reset();
-    print_boot_counter();
-
-
 }
 
 void print_boot_counter(void)

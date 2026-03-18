@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "ESP32-OTA-A-B-Secure",
-    "project_version":    "4b9d51ae-dirty",
+    "project_version":    "8896d378-dirty",
     "project_path":       "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure",
     "idf_path":           "/Users/simonschreurs/esp/v5.5.3/esp-idf",
     "build_dir":          "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build",
