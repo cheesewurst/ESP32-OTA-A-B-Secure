@@ -1,0 +1,8 @@
+Command: ninja all
+[1/4] cd /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esptool_py && /Users/simonschreurs/.espressif/python_env/idf5.5_py3.9_env/bin/python /Users/simonschreurs/esp/v5.5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/partition_table/partition-table.bin /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/ESP32-OTA-A-B-Secure.bin
+ESP32-OTA-A-B-Secure.bin binary size 0x29730 bytes. Smallest app partition is 0x100000 bytes. 0xd68d0 bytes (84%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/bootloader/esp-idf/esptool_py && /Users/simonschreurs/.espressif/python_env/idf5.5_py3.9_env/bin/python /Users/simonschreurs/esp/v5.5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/bootloader/bootloader.bin
+Bootloader binary size 0x57c0 bytes. 0x2840 bytes (31%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'

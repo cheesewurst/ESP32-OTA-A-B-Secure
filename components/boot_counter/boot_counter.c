@@ -3,7 +3,7 @@
 #include "esp_check.h"
 #include "esp_log.h"
 
-const char* TAG = "BOOT_COUNTER";
+static const char* TAG = "BOOT_COUNTER";
 
 void boot_counter_init(void)
 {
