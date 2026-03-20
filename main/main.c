@@ -20,6 +20,9 @@
 #include "diagnostics_manager.h"
 #include "logger.h"
 #include "../components/config/OTA_CONFIG.h"
+#include "esp_ota_ops.h"
+#include "wifi_manager.h"
+
 
 
 #define LED_GPIO CONFIG_BLINK_GPIO
@@ -38,14 +41,14 @@ void print_boot_counter(void)
 }
 
 void ota_task(void *pvParameter) {
+    wifi_manager_init();
     while(1) {
-        ota_manager_check_for_updates();
         vTaskDelay(OTA_CONFIG_CHECK_INTERVAL_MS / portTICK_PERIOD_MS);
+        ota_manager_check_for_updates();
     }
 }
 
 void blink_led(void* pvParameter) {
-
     while (1) {
         ESP_LOGI(TAG, "Blinking LED, state: %d", s_led_state);
         s_led_state = !s_led_state;
@@ -66,12 +69,13 @@ void start_app_task(void) {
 void app_main(void)
 {
     boot_counter_init();
-    boot_counter_reset();
+    
     boot_counter_increment();
     print_boot_counter();
 
     esp_err_t diag_err = diagnostics_manager_run_firmware_check();
     if(diag_err != ESP_OK) {
+            ESP_LOGE(TAG, "Firmware diagnostics failed: %s", esp_err_to_name(diag_err));
         ota_manager_rollback();
     }
     else {

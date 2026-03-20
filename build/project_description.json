@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "ESP32-OTA-A-B-Secure",
-    "project_version":    "fb2f44b8-dirty",
+    "project_version":    "b611a475-dirty",
     "project_path":       "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure",
     "idf_path":           "/Users/simonschreurs/esp/v5.5.3/esp-idf",
     "build_dir":          "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build",
@@ -21,12 +21,12 @@
     "monitor_toolprefix": "riscv32-esp-elf-",
     "c_compiler":         "/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/driver/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/efuse/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp-tls/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_common/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_ana_cmpr/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_bitscrambler/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_dac/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_gpio/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_gptimer/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_i2c/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_i2s/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_ledc/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_mcpwm/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_parlio/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_pcnt/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_rmt/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_sdm/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_spi/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_tsens/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_twai/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_uart/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_event/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_http_client/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_https_ota/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_hw_support/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_mm/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_partition/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_pm/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_psram/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_ringbuf/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_rom/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_security/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_system/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_timer/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/freertos/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/hal/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/heap/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/log/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/lwip/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/mbedtls/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/pthread/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/soc/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/spi_flash/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/tcp_transport/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/vfs/Kconfig",
+        "COMPONENT_KCONFIGS" : "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/driver/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/efuse/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp-tls/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_coex/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_common/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_ana_cmpr/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_bitscrambler/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_dac/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_gpio/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_gptimer/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_i2c/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_i2s/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_ledc/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_mcpwm/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_parlio/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_pcnt/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_rmt/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_sdm/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_spi/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_tsens/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_twai/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_uart/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_event/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_http_client/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_https_ota/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_hw_support/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_mm/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_netif/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_partition/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_phy/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_pm/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_psram/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_ringbuf/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_rom/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_security/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_system/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_timer/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_wifi/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/freertos/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/hal/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/heap/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/log/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/lwip/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/mbedtls/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/pthread/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/soc/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/spi_flash/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/tcp_transport/Kconfig;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/vfs/Kconfig",
         "COMPONENT_KCONFIGS_PROJBUILD" : "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/bootloader/Kconfig.projbuild;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_app_format/Kconfig.projbuild;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_rom/Kconfig.projbuild;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esptool_py/Kconfig.projbuild;/Users/simonschreurs/esp/v5.5.3/esp-idf/components/partition_table/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "riscv" ],
-    "build_components" : [ "app_update", "boot_counter", "bootloader", "bootloader_support", "cxx", "diagnostics_manager", "driver", "efuse", "esp-tls", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_event", "esp_http_client", "esp_https_ota", "esp_hw_support", "esp_mm", "esp_partition", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esptool_py", "freertos", "hal", "heap", "http_parser", "log", "logger", "lwip", "main", "mbedtls", "newlib", "nvs_flash", "ota_manager", "partition_table", "pthread", "riscv", "sdmmc", "soc", "spi_flash", "tcp_transport", "vfs", "" ],
-    "build_component_paths" : [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/app_update", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/boot_counter", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/bootloader", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/bootloader_support", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/cxx", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/diagnostics_manager", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/driver", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/efuse", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp-tls", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_app_format", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_bootloader_format", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_common", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_ana_cmpr", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_bitscrambler", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_dac", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_gpio", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_gptimer", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_i2c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_i2s", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_ledc", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_mcpwm", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_parlio", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_pcnt", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_rmt", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_sdio", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_sdm", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_sdmmc", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_sdspi", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_spi", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_tsens", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_twai", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_uart", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_usb_serial_jtag", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_event", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_http_client", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_https_ota", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_hw_support", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_mm", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_partition", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_pm", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_psram", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_ringbuf", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_rom", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_security", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_system", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_timer", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_vfs_console", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esptool_py", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/freertos", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/hal", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/heap", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/http_parser", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/log", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/logger", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/lwip", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/main", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/mbedtls", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/ota_manager", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/partition_table", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/pthread", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/riscv", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/sdmmc", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/soc", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/spi_flash", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/tcp_transport", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/vfs", "" ],
+    "build_components" : [ "app_update", "boot_counter", "bootloader", "bootloader_support", "cxx", "diagnostics_manager", "driver", "efuse", "esp-tls", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_event", "esp_http_client", "esp_https_ota", "esp_hw_support", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "esptool_py", "freertos", "hal", "heap", "http_parser", "log", "logger", "lwip", "main", "mbedtls", "newlib", "nvs_flash", "ota_manager", "partition_table", "pthread", "riscv", "sdmmc", "soc", "spi_flash", "tcp_transport", "vfs", "wifi_manager", "wpa_supplicant", "" ],
+    "build_component_paths" : [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/app_update", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/boot_counter", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/bootloader", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/bootloader_support", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/cxx", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/diagnostics_manager", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/driver", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/efuse", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp-tls", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_app_format", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_bootloader_format", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_coex", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_common", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_ana_cmpr", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_bitscrambler", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_dac", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_gpio", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_gptimer", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_i2c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_i2s", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_ledc", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_mcpwm", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_parlio", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_pcnt", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_rmt", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_sdio", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_sdm", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_sdmmc", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_sdspi", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_spi", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_tsens", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_twai", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_uart", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_driver_usb_serial_jtag", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_event", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_http_client", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_https_ota", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_hw_support", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_mm", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_netif", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_netif_stack", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_partition", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_phy", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_pm", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_psram", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_ringbuf", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_rom", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_security", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_system", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_timer", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_vfs_console", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_wifi", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esptool_py", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/freertos", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/hal", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/heap", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/http_parser", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/log", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/logger", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/lwip", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/main", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/mbedtls", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/newlib", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/nvs_flash", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/ota_manager", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/partition_table", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/pthread", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/riscv", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/sdmmc", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/soc", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/spi_flash", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/tcp_transport", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/vfs", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/wifi_manager", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant", "" ],
     "build_component_info" : {
         "app_update": {
             "alias": "idf::app_update",
@@ -191,6 +191,21 @@
             "managed_priv_reqs": [],
             "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a",
             "sources": [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_coex": {
+            "alias": "idf::esp_coex",
+            "target": "___idf_esp_coex",
+            "prefix": "idf",
+            "dir": "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_coex",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_coex",
+            "reqs": [],
+            "priv_reqs": [ "esp_timer", "esp_driver_gpio" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_coex/libesp_coex.a",
+            "sources": [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_coex/esp32c6/esp_coex_adapter.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_coex/src/coexist_debug_diagram.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_coex/src/coexist_debug.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_common": {
@@ -598,6 +613,36 @@
             "sources": [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_mm/esp_mmu_map.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_mm/port/esp32c6/ext_mem_layout.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_mm/esp_cache_msync.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_mm/esp_cache_utils.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_mm/heap_align_hw.c" ],
             "include_dirs": [ "include" ]
         },
+        "esp_netif": {
+            "alias": "idf::esp_netif",
+            "target": "___idf_esp_netif",
+            "prefix": "idf",
+            "dir": "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_netif",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_netif",
+            "reqs": [ "esp_event" ],
+            "priv_reqs": [ "esp_netif_stack" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_netif/libesp_netif.a",
+            "sources": [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_netif/esp_netif_handlers.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_netif/esp_netif_objects.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_netif/esp_netif_defaults.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_netif/lwip/esp_netif_sntp.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_netif/lwip/esp_netif_lwip_defaults.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_netif/lwip/netif/wlanif.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_netif/lwip/netif/ethernetif.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_netif/lwip/netif/esp_pbuf_ref.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_netif_stack": {
+            "alias": "idf::esp_netif_stack",
+            "target": "___idf_esp_netif_stack",
+            "prefix": "idf",
+            "dir": "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_netif_stack",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_esp_netif_stack",
+            "reqs": [ "lwip" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
+            "include_dirs": []
+        },
         "esp_partition": {
             "alias": "idf::esp_partition",
             "target": "___idf_esp_partition",
@@ -612,6 +657,21 @@
             "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_partition/libesp_partition.a",
             "sources": [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_partition/partition.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_partition/partition_target.c" ],
             "include_dirs": [ "include" ]
+        },
+        "esp_phy": {
+            "alias": "idf::esp_phy",
+            "target": "___idf_esp_phy",
+            "prefix": "idf",
+            "dir": "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_phy",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_phy",
+            "reqs": [],
+            "priv_reqs": [ "nvs_flash", "esp_driver_gpio", "efuse", "esp_timer", "esp_wifi" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_phy/libesp_phy.a",
+            "sources": [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_phy/src/phy_override.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_phy/src/lib_printf.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_phy/src/phy_common.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_phy/src/phy_init.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_phy/esp32c6/phy_init_data.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_phy/src/btbb_init.c" ],
+            "include_dirs": [ "include", "esp32c6/include" ]
         },
         "esp_pm": {
             "alias": "idf::esp_pm",
@@ -732,6 +792,21 @@
             "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_vfs_console/libesp_vfs_console.a",
             "sources": [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_vfs_console/vfs_console.c" ],
             "include_dirs": [ "include" ]
+        },
+        "esp_wifi": {
+            "alias": "idf::esp_wifi",
+            "target": "___idf_esp_wifi",
+            "prefix": "idf",
+            "dir": "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_wifi",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_wifi",
+            "reqs": [ "esp_event", "esp_phy", "esp_netif" ],
+            "priv_reqs": [ "esptool_py", "esp_pm", "esp_timer", "nvs_flash", "wpa_supplicant", "hal", "lwip", "esp_coex" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_wifi/libesp_wifi.a",
+            "sources": [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_wifi/src/lib_printf.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_wifi/src/mesh_event.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_wifi/src/smartconfig.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_wifi/src/wifi_init.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_wifi/src/wifi_default.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_wifi/src/wifi_netif.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_wifi/src/wifi_default_ap.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_wifi/esp32c6/esp_adapter.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_wifi/regulatory/esp_wifi_regulatory.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_wifi/src/smartconfig_ack.c" ],
+            "include_dirs": [ "include", "include/local", "wifi_apps/include", "wifi_apps/nan_app/include" ]
         },
         "esptool_py": {
             "alias": "idf::esptool_py",
@@ -861,7 +936,7 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "spi_flash", "boot_counter", "ota_manager", "diagnostics_manager", "logger", "driver" ],
+            "priv_reqs": [ "nvs_flash", "spi_flash", "boot_counter", "ota_manager", "diagnostics_manager", "logger", "driver", "wifi_manager" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/main/libmain.a",
@@ -925,7 +1000,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/ota_manager/libota_manager.a",
-            "sources": [ "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/ota_manager/ota_manager.c" ],
+            "sources": [ "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/ota_manager/ota_manager.c", "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/ca_cert.pem.S" ],
             "include_dirs": [ "." ]
         },
         "partition_table": {
@@ -1047,6 +1122,36 @@
             "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/vfs/libvfs.a",
             "sources": [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/vfs/vfs.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/vfs/vfs_eventfd.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/vfs/vfs_semihost.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/vfs/nullfs.c" ],
             "include_dirs": [ "include" ]
+        },
+        "wifi_manager": {
+            "alias": "idf::wifi_manager",
+            "target": "___idf_wifi_manager",
+            "prefix": "idf",
+            "dir": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/wifi_manager",
+            "type": "LIBRARY",
+            "lib": "__idf_wifi_manager",
+            "reqs": [ "esp_wifi", "esp_netif" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/wifi_manager/libwifi_manager.a",
+            "sources": [ "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/wifi_manager/wifi_manager.c" ],
+            "include_dirs": [ "." ]
+        },
+        "wpa_supplicant": {
+            "alias": "idf::wpa_supplicant",
+            "target": "___idf_wpa_supplicant",
+            "prefix": "idf",
+            "dir": "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant",
+            "type": "LIBRARY",
+            "lib": "__idf_wpa_supplicant",
+            "reqs": [],
+            "priv_reqs": [ "mbedtls", "esp_timer", "esp_wifi" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/wpa_supplicant/libwpa_supplicant.a",
+            "sources": [ "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/port/os_xtensa.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/port/eloop.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/ap/ap_config.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/ap/ieee802_1x.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/ap/wpa_auth.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/ap/wpa_auth_ie.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/ap/pmksa_cache_auth.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/ap/sta_info.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/ap/ieee802_11.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/ap/comeback_token.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/common/sae.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/common/dragonfly.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/common/wpa_common.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/utils/bitfield.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/aes-siv.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/sha256-kdf.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/ccmp.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/aes-gcm.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/crypto_ops.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/dh_group5.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/dh_groups.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/ms_funcs.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/sha1-tlsprf.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/sha256-tlsprf.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/sha384-tlsprf.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/sha256-prf.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/sha1-prf.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/sha384-prf.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/md4-internal.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/sha1-tprf.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/eap_common/eap_wsc_common.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/common/ieee802_11_common.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/eap_peer/chap.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/eap_peer/eap.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/eap_peer/eap_common.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/eap_peer/eap_mschapv2.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/eap_peer/eap_peap.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/eap_peer/eap_peap_common.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/eap_peer/eap_tls.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/eap_peer/eap_tls_common.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/eap_peer/eap_ttls.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/eap_peer/mschapv2.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast_common.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast_pac.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/rsn_supp/pmksa_cache.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa_ie.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/utils/base64.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/utils/common.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/utils/ext_password.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/utils/uuid.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/utils/wpabuf.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/utils/wpa_debug.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/utils/json.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/wps/wps.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/wps/wps_attr_build.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/wps/wps_attr_parse.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/wps/wps_attr_process.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/wps/wps_common.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/wps/wps_dev_attr.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/wps/wps_enrollee.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/common/sae_pk.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_eap_client.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa2_api_port.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa_main.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpas_glue.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_common.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wps.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa3.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_owe.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_hostap.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/tls_mbedtls.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-bignum.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-rsa.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-ec.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/fastpsk.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/rc4.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/des-internal.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/fastpbkdf2.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/aes-wrap.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/aes-unwrap.c", "/Users/simonschreurs/esp/v5.5.3/esp-idf/components/wpa_supplicant/src/crypto/aes-ccm.c" ],
+            "include_dirs": [ "include", "port/include", "esp_supplicant/include" ]
         }
     },
     "all_component_info" : {
@@ -2365,7 +2470,7 @@
             "dir": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "spi_flash", "boot_counter", "ota_manager", "diagnostics_manager", "logger", "driver" ],
+            "priv_reqs": [ "nvs_flash", "spi_flash", "boot_counter", "ota_manager", "diagnostics_manager", "logger", "driver", "wifi_manager" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": []
@@ -2413,6 +2518,18 @@
             "dir": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/ota_manager",
             "lib": "__idf_ota_manager",
             "reqs": [ "esp_https_ota", "app_update", "nvs_flash", "esp_partition" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "." ]
+        },
+        "wifi_manager": {
+            "alias": "idf::wifi_manager",
+            "target": "___idf_wifi_manager",
+            "prefix": "idf",
+            "dir": "/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/wifi_manager",
+            "lib": "__idf_wifi_manager",
+            "reqs": [ "esp_wifi", "esp_netif" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],

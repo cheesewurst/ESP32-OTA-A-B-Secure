@@ -1,4 +1,4 @@
-# Install script for directory: /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/components/diagnostics_runner
+# Install script for directory: /Users/simonschreurs/esp/v5.5.3/esp-idf/components/esp_eth
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

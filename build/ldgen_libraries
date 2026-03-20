@@ -45,6 +45,11 @@
 /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/http_parser/libhttp_parser.a
 /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/nvs_flash/libnvs_flash.a
 /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/mbedtls/libmbedtls.a
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_wifi/libesp_wifi.a
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_phy/libesp_phy.a
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_netif/libesp_netif.a
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/wpa_supplicant/libwpa_supplicant.a
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_coex/libesp_coex.a
 /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_https_ota/libesp_https_ota.a
 /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_security/libesp_security.a
 /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/pthread/libpthread.a
@@ -120,7 +125,14 @@
 /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_driver_ledc/libesp_driver_ledc.a
 /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_driver_parlio/libesp_driver_parlio.a
 /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_driver_twai/libesp_driver_twai.a
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_phy/libesp_phy.a
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_netif/libesp_netif.a
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/wpa_supplicant/libwpa_supplicant.a
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_coex/libesp_coex.a
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esp_wifi/libesp_wifi.a
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/wifi_manager/libwifi_manager.a
 /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/main/libmain.a
 /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/ota_manager/libota_manager.a
 /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/diagnostics_manager/libdiagnostics_manager.a
 /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/driver/libdriver.a
+/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/wifi_manager/libwifi_manager.a

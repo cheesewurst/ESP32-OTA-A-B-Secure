@@ -15,6 +15,9 @@ static const char* TAG = "OTA_MANAGER";
 
 ota_manager_info_t ota_manager_info;
 
+extern const uint8_t server_cert_pem_start[] asm("_binary_ca_cert_pem_start");
+extern const uint8_t server_cert_pem_end[]   asm("_binary_ca_cert_pem_end");
+
 esp_err_t ota_manager_init(void)
 {
     const esp_partition_t *ota_0 = esp_partition_find_first(ESP_PARTITION_TYPE_APP, ESP_PARTITION_SUBTYPE_APP_OTA_0, NULL);
@@ -32,6 +35,17 @@ esp_err_t ota_manager_init(void)
 esp_err_t ota_manager_check_for_updates(void)
 {
     //todo: - check if update is available http pull
+    esp_err_t err = ota_manager_set_update_https_url(OTA_CONFIG_UPDATE_URL);
+    if(err != ESP_OK) {
+        ESP_LOGE(TAG, "Invalid OTA URL: %s", esp_err_to_name(err));
+        return err;
+    }
+
+    err = ota_manager_perform_update();
+    if(err != ESP_OK) {
+        ESP_LOGE(TAG, "OTA update failed: %s", esp_err_to_name(err));
+        return err;
+    }
     return ESP_OK;
 }
 
@@ -39,7 +53,7 @@ esp_err_t ota_manager_perform_update(void)
 {
     esp_http_client_config_t http_config = {
         .url = ota_manager_info.update_url,
-        //.cert_pem = s_ota_cert,        // je server certificaat
+        .cert_pem = (char *)server_cert_pem_start, 
         .keep_alive_enable = true,
     };
 
