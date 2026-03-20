@@ -1,3 +1,9 @@
 #define OTA_CONFIG_CHECK_INTERVAL_MS 60000
-#define OTA_TASK_STACK_SIZE 4096
-#define OTA_UPDATE_URL "https://example.com/firmware.bin"
+#define OTA_CONFIG_TASK_STACK_SIZE 4096
+#define OTA_CONFIG_TASK_PRIORITY 3
+#define OTA_CONFIG_UPDATE_URL "https://example.com/firmware.bin"
+
+#define BLINK_LED_CONFIG_STACK_SIZE 2048
+#define BLINK_LED_CONFIG_TASK_PRIORITY 5
+#define CONFIG_BLINK_GPIO 8 
+#define CONFIG_BLINK_LED_DELAY_MS 1000

@@ -984,6 +984,25 @@ rule C_STATIC_LIBRARY_LINKER____idf_ota_manager_
 #############################################
 # Rule for compiling C files.
 
+rule C_COMPILER____idf_logger_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_logger_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
 rule C_COMPILER____idf_diagnostics_manager_unscanned_
   depfile = $DEP_FILE
   deps = gcc
@@ -1003,7 +1022,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_diagnostics_manager_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_logger_unscanned_
+rule C_COMPILER____idf_esp_driver_pcnt_unscanned_
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1013,7 +1032,292 @@ rule C_COMPILER____idf_logger_unscanned_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_logger_
+rule C_STATIC_LIBRARY_LINKER____idf_esp_driver_pcnt_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_esp_driver_gptimer_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_esp_driver_gptimer_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_esp_driver_spi_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_esp_driver_spi_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_esp_driver_mcpwm_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_esp_driver_mcpwm_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_esp_driver_i2s_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_esp_driver_i2s_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_sdmmc_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_sdmmc_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_esp_driver_sdspi_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_esp_driver_sdspi_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_esp_driver_sdio_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_esp_driver_sdio_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_esp_driver_rmt_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_esp_driver_rmt_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_esp_driver_tsens_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_esp_driver_tsens_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_esp_driver_sdm_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_esp_driver_sdm_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_esp_driver_i2c_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_esp_driver_i2c_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_esp_driver_ledc_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_esp_driver_ledc_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_esp_driver_parlio_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_esp_driver_parlio_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_esp_driver_twai_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_esp_driver_twai_
+  command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_driver_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_driver_
   command = $PRE_LINK && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/simonschreurs/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/riscv32-esp-elf-ranlib $TARGET_FILE && /Users/simonschreurs/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT

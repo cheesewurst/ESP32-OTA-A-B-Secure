@@ -35,7 +35,7 @@ esp_err_t ota_manager_init(void);
 esp_err_t ota_manager_check_for_updates(void);
 esp_err_t ota_manager_perform_update(void);
 esp_err_t ota_manager_cleanup(void);
-esp_err_t ota_manager_confirm_update(void);
+esp_err_t ota_manager_confirm_update(void); 
 esp_err_t ota_manager_rollback(void);
 
 esp_err_t ota_manager_check_version(const char* new_version); // Check if the new version is valid and different from the current version

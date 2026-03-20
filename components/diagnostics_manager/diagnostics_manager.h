@@ -1,5 +1,5 @@
-#ifndef DIAGNOSTICS_RUNNER_H
-#define DIAGNOSTICS_RUNNER_H
+#ifndef DIAGNOSTICS_MANAGER_H
+#define DIAGNOSTICS_MANAGER_H
 
 #include "esp_err.h"
 
@@ -13,6 +13,7 @@
  * @version 1.0
  */
 
-esp_err_t diagnostics_runner_check_version();
+esp_err_t diagnostics_manager_run_firmware_check();
+esp_err_t diagnostics_manager_check_boot_count();
 
 #endif // DIAGNOSTICS_RUNNER_H

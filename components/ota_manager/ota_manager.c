@@ -1,6 +1,9 @@
 #include "ota_manager.h"
 #include "esp_log.h"
 #include "esp_system.h"
+#include "esp_https_ota.h"
+#include "esp_http_client.h"
+#include "esp_ota_ops.h"
 
 #include "../../main/version_info.h"
 #include "../config/OTA_CONFIG.h"
@@ -28,28 +31,58 @@ esp_err_t ota_manager_init(void)
 
 esp_err_t ota_manager_check_for_updates(void)
 {
-    ESP_LOGI(TAG, "Checking for updates...");
+    //todo: - check if update is available http pull
     return ESP_OK;
 }
 
 esp_err_t ota_manager_perform_update(void)
 {
+    esp_http_client_config_t http_config = {
+        .url = ota_manager_info.update_url,
+        //.cert_pem = s_ota_cert,        // je server certificaat
+        .keep_alive_enable = true,
+    };
+
+    esp_https_ota_config_t ota_config = {
+        .http_config = &http_config,
+    };
+
+    ota_manager_info.status = OTA_STATUS_DOWNLOADING;
+    esp_err_t ret = esp_https_ota(&ota_config);
+
+    if(ret == ESP_OK) {
+        ota_manager_info.status = OTA_STATUS_SUCCESS;
+        ESP_LOGI(TAG, "OTA Succeed, Rebooting...");
+        esp_restart(); //Needs to be called somewhere else, not responsible for rebooting here
+    } else {
+        ota_manager_info.status = OTA_STATUS_FAILED;
+        ESP_LOGE(TAG, "Firmware upgrade failed");
+    }
+
     return ESP_OK;
 }
 
 esp_err_t ota_manager_cleanup(void)
 {
+    ota_manager_info.status = OTA_STATUS_IDLE;
+    ota_manager_info.update_url[0] = '\0';
     return ESP_OK;
 }
 
 esp_err_t ota_manager_confirm_update(void)
 {
-    return ESP_OK;
+    const esp_partition_t *running = esp_ota_get_running_partition();
+    ESP_LOGI(TAG, "Confirming update for partition: %s", running->label);
+    return esp_ota_mark_app_valid_cancel_rollback();
 }
 
 esp_err_t ota_manager_rollback(void)
 {
-    return ESP_OK;
+    const esp_partition_t *running = esp_ota_get_running_partition();
+    const esp_partition_t *other = esp_ota_get_next_update_partition(NULL);
+    
+    ESP_LOGI(TAG, "Rolling back from %s to %s", running->label, other->label);
+    return esp_ota_mark_app_invalid_rollback_and_reboot();
 }
 
 
@@ -80,18 +113,21 @@ esp_err_t ota_manager_check_https_url(const char* url)
 
 esp_err_t ota_manager_check_hash(const uint8_t* expected_hash, size_t hash_len)
 {
-    return ESP_OK;
+    ESP_LOGW(TAG, "ota_manager_check_hash not implemented yet");
+    return ESP_ERR_NOT_SUPPORTED;
 } 
 
 esp_err_t ota_manager_find_inactive_partition(esp_partition_t** partition)
 {
-    return ESP_OK;
+    ESP_LOGW(TAG, "ota_manager_find_inactive_partition not implemented yet");
+    return ESP_ERR_NOT_SUPPORTED;
 } 
 
 esp_err_t ota_manager_write_firmware_to_partition(esp_partition_t* partition)
 {
-    return ESP_OK;
-} 
+    ESP_LOGW(TAG, "ota_manager_write_firmware_to_partition not implemented yet");
+    return ESP_ERR_NOT_SUPPORTED;
+}
 
 esp_err_t ota_manager_set_update_https_url(const char* url)
 {
@@ -99,8 +135,14 @@ esp_err_t ota_manager_set_update_https_url(const char* url)
         return ESP_ERR_INVALID_ARG;
     }
 
+    esp_err_t err = ota_manager_check_https_url(url);
+    if(err != ESP_OK) {
+        return err;
+    }
+
     strncpy(ota_manager_info.update_url, url, sizeof(ota_manager_info.update_url) - 1);
     ota_manager_info.update_url[sizeof(ota_manager_info.update_url) - 1] = '\0';
+
     return ESP_OK;
 }
 
