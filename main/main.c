@@ -76,7 +76,14 @@ void app_main(void)
 
     esp_err_t diag_err = diagnostics_manager_run_firmware_check();
     if(diag_err != ESP_OK) {
-            ESP_LOGE(TAG, "Firmware diagnostics failed: %s", esp_err_to_name(diag_err));
+        ESP_LOGE(TAG, "Firmware diagnostics failed: %s", esp_err_to_name(diag_err));
+        const esp_partition_t* part = esp_ota_get_running_partition();
+        if(part->subtype == ESP_PARTITION_SUBTYPE_APP_FACTORY) {
+            ESP_LOGE(TAG, "Running factory partition, cannot rollback. Staying on current firmware.");
+            return;
+        }
+        boot_counter_reset();
+        ESP_LOGI(TAG, "Resetted boot counter. Rolling back to previous firmware...");
         ota_manager_rollback();
     }
     else {
