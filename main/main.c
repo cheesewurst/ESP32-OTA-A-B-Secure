@@ -71,6 +71,7 @@ void app_main(void)
     boot_counter_init();
     
     boot_counter_increment();
+
     print_boot_counter();
 
     esp_err_t diag_err = diagnostics_manager_run_firmware_check();
