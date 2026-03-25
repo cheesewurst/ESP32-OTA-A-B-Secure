@@ -1136,3 +1136,5 @@
 4934	5072	1774021532575502803	/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/.bin_timestamp	6ed709760b139c9d
 5072	5103	1774021532576289093	esp-idf/esptool_py/CMakeFiles/app_check_size	a6b3fcbcd1b313c3
 5072	5103	1774021532576289093	/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/esp-idf/esptool_py/CMakeFiles/app_check_size	a6b3fcbcd1b313c3
+10	444028220	1773983513324100248	CMakeFiles/confserver	f6316745838414ec
+10	444028220	1773983513324100248	/Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/CMakeFiles/confserver	f6316745838414ec

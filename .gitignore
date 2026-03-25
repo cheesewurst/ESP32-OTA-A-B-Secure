@@ -55,3 +55,29 @@ dkms.conf
 *.dwo
 
 sdkconfig
+
+# Build output
+build/
+
+# SDK config — bevat WiFi credentials en persoonlijke instellingen
+sdkconfig
+sdkconfig.old
+
+# Managed components — worden automatisch gedownload
+managed_components/
+dependencies.lock
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS rommel
+.DS_Store
+
+# VS Code — optioneel, hangt af of je team dezelfde settings wil delen
+.vscode/
+
+# Certificaten en sleutels — nooit in git
+*.pem
+*.key
+*.crt
