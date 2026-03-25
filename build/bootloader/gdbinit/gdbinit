@@ -1,0 +1,2 @@
+source /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/bootloader/gdbinit/symbols
+source /Users/simonschreurs/Documents/ESP_IDF/Projects/ESP32-OTA-A-B-Secure/build/bootloader/gdbinit/connect
